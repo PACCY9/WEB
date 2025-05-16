@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Table with Form Elements</title>
+  <style>
+    table {
+      width: 80%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      font-family: Arial, sans-serif;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    select, input[type="text"] {
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center;">Interactive Table with Form Elements</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Gender (Radio)</th>
+        <th>Skills (List)</th>
+        <th>Country (Dropdown)</th>
+        <th>Subscribe (Checkbox)</th>
+        <th>Remarks (Input)</th>
+        <th>Action (Button)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John Doe</td>
+
+        <td>
+          <label><input type="radio" name="gender1" value="Male" checked> Male</label><br>
+          <label><input type="radio" name="gender1" value="Female"> Female</label>
+        </td>
+
+        <td>
+          <ul style="text-align:left; margin: 0; padding-left: 20px;">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </td>
+
+        <td>
+          <select>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="India">India</option>
+          </select>
+        </td>
+
+        <td>
+          <label><input type="checkbox" checked> Yes</label>
+        </td>
+
+        <td>
+          <input type="text" placeholder="Enter remarks">
+        </td>
+
+        <td>
+          <button onclick="alert('Saved for John Doe')">Save</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Jane Smith</td>
+
+        <td>
+          <label><input type="radio" name="gender2" value="Male"> Male</label><br>
+          <label><input type="radio" name="gender2" value="Female" checked> Female</label>
+        </td>
+
+        <td>
+          <ul style="text-align:left; margin: 0; padding-left: 20px;">
+            <li>Python</li>
+            <li>Django</li>
+          </ul>
+        </td>
+
+        <td>
+          <select>
+            <option value="Canada">Canada</option>
+            <option value="Australia">Australia</option>
+            <option value="Germany">Germany</option>
+          </select>
+        </td>
+
+        <td>
+          <label><input type="checkbox"> Yes</label>
+        </td>
+
+        <td>
+          <input type="text" placeholder="Enter remarks">
+        </td>
+
+        <td>
+          <button onclick="alert('Saved for Jane Smith')">Save</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
